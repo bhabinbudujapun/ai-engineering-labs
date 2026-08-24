@@ -8,15 +8,13 @@ client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
 
-
 prompt = """
-Classify the sentiment
+Classify the sentiment of the following text.
 
 Text:
-The customer service was slow but eventually sloved my issue.
-# The customer service was good and helpful.
+The customer service was slow but eventually solved my issue.
 
-Return only:
+Return only one of:
 Positive
 Negative
 Neutral
